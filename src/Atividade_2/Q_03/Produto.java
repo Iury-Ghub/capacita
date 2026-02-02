@@ -1,4 +1,4 @@
-package Atividade_2.Q3;
+package Atividade_2.Q_03;
 
 public class Produto {
     private String nome;

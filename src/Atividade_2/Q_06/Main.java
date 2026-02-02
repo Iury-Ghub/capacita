@@ -1,4 +1,4 @@
-package Atividade_2.Q6;
+package Atividade_2.Q_06;
 
 enum Departamento{
     RH,ADMINISTRATIVO,GERENCIA

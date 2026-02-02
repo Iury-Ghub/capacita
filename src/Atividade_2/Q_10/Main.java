@@ -1,4 +1,4 @@
-package Atividade_2.Q10;
+package Atividade_2.Q_10;
 
 import java.util.ArrayList;
 

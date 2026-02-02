@@ -1,4 +1,4 @@
-package Atividade_2.Q7;
+package Atividade_2.Q_07;
 
 class Animal{
     public void fazerSom(){

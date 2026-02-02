@@ -1,4 +1,4 @@
-package Atividade_2.Q4;
+package Atividade_2.Q_04;
 
 class Pessoa{
     private String nome;

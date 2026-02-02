@@ -1,4 +1,4 @@
-package Atividade_2.Q1;
+package Atividade_2.Q_01;
 
 public class ContaBancaria {
     private int numero;
