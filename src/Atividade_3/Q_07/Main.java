@@ -33,5 +33,6 @@ public class Main {
     public static void main(String[] args) {
         Leitor leitor = new Leitor();
         int numero = leitor.lerNumeroInteiro();
+        System.out.println(numero);
     }
 }
