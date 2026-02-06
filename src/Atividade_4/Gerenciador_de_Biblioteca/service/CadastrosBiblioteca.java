@@ -1,11 +1,10 @@
-package mini_projeto.service;
+package Atividade_4.Gerenciador_de_Biblioteca.service;
 
-import mini_projeto.exceptions.LimiteDeLivrosExcedidoExeption;
-import mini_projeto.exceptions.LivroNaoEncontradoExeption;
-import mini_projeto.exceptions.UsuarioNaoEncontradoExeption;
-import mini_projeto.model.ID;
-import mini_projeto.model.Livro;
-import mini_projeto.model.Usuario;
+import Atividade_4.Gerenciador_de_Biblioteca.exceptions.LivroNaoEncontradoExeption;
+import Atividade_4.Gerenciador_de_Biblioteca.exceptions.UsuarioNaoEncontradoExeption;
+import Atividade_4.Gerenciador_de_Biblioteca.model.ID;
+import Atividade_4.Gerenciador_de_Biblioteca.model.Livro;
+import Atividade_4.Gerenciador_de_Biblioteca.model.Usuario;
 
 import java.util.ArrayList;
 

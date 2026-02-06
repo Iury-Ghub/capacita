@@ -1,4 +1,4 @@
-package mini_projeto.model;
+package Atividade_4.Gerenciador_de_Biblioteca.model;
 
 public class ID {
     String classificacao;

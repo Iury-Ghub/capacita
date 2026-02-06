@@ -1,6 +1,4 @@
-package mini_projeto.model;
-
-import mini_projeto.service.CadastrosIDs;
+package Atividade_4.Gerenciador_de_Biblioteca.model;
 
 public class Livro {
     private ID ID;

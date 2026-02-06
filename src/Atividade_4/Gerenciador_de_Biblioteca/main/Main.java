@@ -1,13 +1,13 @@
-package mini_projeto.main;
+package Atividade_4.Gerenciador_de_Biblioteca.main;
 
-import mini_projeto.exceptions.*;
-import mini_projeto.model.Aluno;
-import mini_projeto.model.ID;
-import mini_projeto.model.Livro;
-import mini_projeto.model.Professor;
-import mini_projeto.service.BibliotecaService;
-import mini_projeto.service.CadastrosBiblioteca;
-import mini_projeto.service.CadastrosIDs;
+import Atividade_4.Gerenciador_de_Biblioteca.exceptions.*;
+import Atividade_4.Gerenciador_de_Biblioteca.model.Aluno;
+import Atividade_4.Gerenciador_de_Biblioteca.model.ID;
+import Atividade_4.Gerenciador_de_Biblioteca.model.Livro;
+import Atividade_4.Gerenciador_de_Biblioteca.model.Professor;
+import Atividade_4.Gerenciador_de_Biblioteca.service.BibliotecaService;
+import Atividade_4.Gerenciador_de_Biblioteca.service.CadastrosBiblioteca;
+import Atividade_4.Gerenciador_de_Biblioteca.service.CadastrosIDs;
 
 import java.util.Scanner;
 
@@ -117,7 +117,8 @@ public class Main {
                             cadastrosBiblioteca.removerUsuario(idEncontrado);
                             cadastrosIDs.removerID(idEncontrado);
                             break;
-                        } catch (LivroNaoEncontradoExeption | UsuarioNaoEncontradoExeption | LivroIndisponivelException |
+                        } catch (LivroNaoEncontradoExeption | UsuarioNaoEncontradoExeption |
+                                 LivroIndisponivelException |
                                  LimiteDeLivrosExcedidoExeption | IDNaoEncontradoExeption e)
                         {
                             System.err.println(e.getMessage());

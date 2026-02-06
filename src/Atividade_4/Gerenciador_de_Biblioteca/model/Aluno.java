@@ -1,7 +1,6 @@
-package mini_projeto.model;
+package Atividade_4.Gerenciador_de_Biblioteca.model;
 
-import mini_projeto.classificacao.Classificacao;
-import mini_projeto.service.CadastrosBiblioteca;
+import Atividade_4.Gerenciador_de_Biblioteca.classificacao.Classificacao;
 
 public class Aluno extends Usuario {
     private Classificacao classificacao;
