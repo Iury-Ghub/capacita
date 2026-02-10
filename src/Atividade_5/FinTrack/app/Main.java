@@ -7,9 +7,7 @@ import Atividade_5.FinTrack.model.Transacao;
 import Atividade_5.FinTrack.model.TransacaoMensal;
 
 import java.time.LocalDate;
-import java.util.EmptyStackException;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) throws EntradaInvalidaExeption{
@@ -28,7 +26,7 @@ public class Main {
                 System.out.printf(
                         """
                         +=======================+
-                             \u001B[32mSaldo: R$ %.2f\u001B[0m    
+                             \u001B[32mSaldo: R$ %.2f\u001B[0m
                         +=======================+
                         | 1-Adicionar transação |
                         | 2-Listar Transações   |
