@@ -23,28 +23,28 @@ public class FinTracker {
         }else{
             transacoesMensais.add(transacao);
         }
+        saldo+= transacao.getValor();
     }
 
     public void listarTransacoes(){
-        System.out.print("| Lista de transações:\n");
         if(!transacoes.isEmpty()) {
-            System.out.println("Transações Normais:");
+            System.out.println("| Transações Normais:");
             for (Transacao transacao : transacoes) {
                 System.out.printf("| ID: %s" + "\n| Descrição: %s" + "\n| Valor: R$ %.2f \n| Data: %s\n", transacao.getID(), transacao.getDescricao(), transacao.getValor(), transacao.getLocalDate());
                 if (transacao.isReceita()) {
-                    System.out.println("| Receita");
+                    System.out.println("| Receita\n*");
                 } else {
-                    System.out.println("| Despesa");
+                    System.out.println("| Despesa\n*");
                 }
             }
         } if (!transacoesMensais.isEmpty()) {
-            System.out.println("Transações Mensais: ");
+            System.out.println("\n| Transações Mensais: \n");
             for (Transacao transacao : transacoesMensais){
-                System.out.printf("| ID: %s" + "\n| Descrição: %s" + "\n| Valor: R$ %.2f \n| Data: %s\n | ", transacao.getID(), transacao.getDescricao(), transacao.getValor(), transacao.getLocalDate(),transacao.getDiaTransacao());
+                System.out.printf("| ID: %s" + "\n| Descrição: %s" + "\n| Valor: R$ %.2f \n| Data: %s\n", transacao.getID(), transacao.getDescricao(), transacao.getValor(), transacao.getLocalDate());
                 if (transacao.isReceita()) {
-                    System.out.println("| Receita");
+                    System.out.println("| Receita\n*");
                 } else {
-                    System.out.println("| Despesa");
+                    System.out.println("| Despesa\n*");
                 }
             }
         } else {
@@ -78,14 +78,7 @@ public class FinTracker {
         }
     }
 
-    public double calcularSaldoTotal(){
-        for (Transacao transacao:transacoes){
-            if(transacao.isReceita()){
-                saldo += transacao.getValor();
-            }else {
-                saldo -= transacao.getValor();
-            }
-        }
+    public double saldoTotal(){
         return  saldo;
     }
 }

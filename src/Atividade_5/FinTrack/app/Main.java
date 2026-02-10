@@ -22,18 +22,20 @@ public class Main {
 
         while (true){
             try {
-                if(inicializacao) Thread.sleep(1500);
+                if(inicializacao) {
+                    Thread.sleep(1500);
+                }
                 System.out.printf(
                         """
                         +=======================+
-                        |     \u001B[32mSaldo: R$ %.2f\u001B[0m    |
+                             \u001B[32mSaldo: R$ %.2f\u001B[0m    
                         +=======================+
                         | 1-Adicionar transação |
                         | 2-Listar Transações   |
                         | 3-Remover Transação   |
                         | 4-Add transação mensal|
                         | 0-Sair                |
-                        +=======================+""",finTracker.calcularSaldoTotal());
+                        +=======================+""",finTracker.saldoTotal());
                 System.out.print("\n* Escolha: ");
                 escolha = scanner.next();
                 System.out.println(
@@ -123,6 +125,7 @@ public class Main {
                             }
                         }
                         finTracker.adicionarTransacao(new TransacaoMensal(descricao, valor, fluxo, LocalDate.now().getDayOfMonth(),new ID("M")));
+                        break;
                     default:
                         throw new EntradaInvalidaExeption("ERRO: Escolha uma opção válida");
                 }
@@ -137,6 +140,8 @@ public class Main {
                 scanner.nextLine();
                 System.out.println();
                 System.err.println("ERRO: Ocorreu um erro inesperado");
+            }finally {
+                inicializacao = true;
             }
 
         }
